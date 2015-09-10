@@ -1,0 +1,39 @@
+
+userInput =  -1
+Input Error:  Negative Number  -1
+192.168.56.1 - - [10/Sep/2015 12:39:25] "POST /getfib HTTP/1.1" 200 30
+userInput =  0
+Input Error:  Number needs to be greater than 2 0
+192.168.56.1 - - [10/Sep/2015 12:39:32] "POST /getfib HTTP/1.1" 200 47
+stack@ubuntu:~/python$ vi myfib.py
+stack@ubuntu:~/python$ python myfib.py
+Bottle v0.12.8 server starting up (using WSGIRefServer())...
+Listening on http://192.168.56.139:8080/
+Hit Ctrl-C to quit.
+
+userInput =  -1
+Input Error:  Negative Number  -1
+192.168.56.1 - - [10/Sep/2015 12:39:58] "POST /getfib HTTP/1.1" 200 30
+userInput =  0
+Input Error:  Number needs to be greater than 2 0
+192.168.56.1 - - [10/Sep/2015 12:40:02] "POST /getfib HTTP/1.1" 200 47
+userInput =  2
+Input Error:  Number needs to be greater than 2 2
+192.168.56.1 - - [10/Sep/2015 12:40:08] "POST /getfib HTTP/1.1" 200 47
+userInput =  5
+Fibonacci series for first  5 numbers
+ [0, 1, 1, 2, 3]
+192.168.56.1 - - [10/Sep/2015 12:40:12] "POST /getfib HTTP/1.1" 200 23
+userInput =  8
+Fibonacci series for first  8 numbers
+ [0, 1, 1, 2, 3, 5, 8, 13]
+192.168.56.1 - - [10/Sep/2015 12:40:16] "POST /getfib HTTP/1.1" 200 33
+userInput =  10
+Fibonacci series for first  10 numbers
+ [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+192.168.56.1 - - [10/Sep/2015 12:40:20] "POST /getfib HTTP/1.1" 200 41
+userInput =  20
+Fibonacci series for first  20 numbers
+ [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181]
+192.168.56.1 - - [10/Sep/2015 12:40:26] "POST /getfib HTTP/1.1" 200 92
+

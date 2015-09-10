@@ -21,17 +21,19 @@ def getfib():
     myresult.append(current)
     myresult.append(previous)
     if userInput < 0:
+        print 'Input Error:  Negative Number ',userInput
         return 'Input Error:  Negative Number '
 
     elif userInput <= 2:
+        print 'Input Error:  Number needs to be greater than 2', userInput
         return 'Input Error:  Number needs to be greater than 2'
     else:
         while mcount < mycounter:
                 current, previous = previous,current + previous
                 myresult.append(previous)
-#                print template("<p> {{name}}</p>", name=myresult)
                 mcount = mcount + 1
-#        print template("<p> {{name}}</p>", name=myresult)
+        print "Fibonacci series for first ",userInput, "numbers"
+        print template(" {{name}}", name=myresult)
         return template("<p> {{name}}</p>", name=myresult)
 
 

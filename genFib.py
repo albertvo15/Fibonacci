@@ -96,4 +96,4 @@ def getfib():
 
 if __name__ == '__main__':
     bottle.debug(True) # display traceback
-    run(host='192.168.56.139', port=8080)
+    run(host='localhost', port=8080)

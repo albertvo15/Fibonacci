@@ -12,27 +12,31 @@ def index():
 @route('/getfib',method='POST')
 def getfib():
     userInput = int(request.forms.get('userInput'))
-#    print userInput
+    print "userInput = ",userInput
     current,previous = 0, 1
     mycounter = userInput
-    mycounter = mycounter
+    mycounter = mycounter - 1
     mcount = 1
     myresult = []
-    myresult.append(0)
+    myresult.append(current)
+    myresult.append(previous)
     if userInput < 0:
-        return 'Input Error:  Negative Number'
+        return 'Input Error:  Negative Number '
 
+    elif userInput <= 2:
+        return 'Input Error:  Number needs to be greater than 2'
     else:
         while mcount < mycounter:
-                current = previous
+                current, previous = previous,current + previous
                 myresult.append(previous)
-                previous = current + previous
-#                print template("<p>Fibonacci {{name}}</p>", name=myresult)
+#                print template("<p> {{name}}</p>", name=myresult)
                 mcount = mcount + 1
+#        print template("<p> {{name}}</p>", name=myresult)
         return template("<p> {{name}}</p>", name=myresult)
 
 
 
 if __name__ == '__main__':
     bottle.debug(True) # display traceback
-    run(host='localhost', port=8080)
+    run(host='192.168.56.139', port=8080)
+

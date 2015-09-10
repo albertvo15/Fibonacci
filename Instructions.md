@@ -6,4 +6,5 @@ Requirements:  The Fibonacci web service is built using Python and Bottle.
 Installation
 1.  To install python:  # apt-get install python
 2.  To install Bottle:  Download Bottle.py "$  wget http://bottlepy.org/bottle.py"
-3.  Run genFib.py
+3.  Install the latest stable release with pip install bottle or easy_install -U bottle 
+4.  Run: python genFib.py

@@ -2,7 +2,7 @@
 
 This repo is for Fibonacci generator:  genFib.py
 
-genFib.py is python/Bottle Web Service that gets an input number n from user and generate Fibonacci series for first n numbers.
+genFib.py is python/Bottle-based Web Service that gets an input number n from user and generates Fibonacci series for first n numbers.
 
 
 Usage:
@@ -19,7 +19,7 @@ Once user enters number, genFib.py Web Service will return Fibonacci series for 
 
 Tests
 
-TBD:  Create unit tests automation to test generating Fibonacci series with different input n
+TBD:  Create unit tests to automate test for validating Fibonacci series with different input n
 
 
 
